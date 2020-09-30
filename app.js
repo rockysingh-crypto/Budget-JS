@@ -2,6 +2,8 @@
 
 var id = 0;
 
+
+// Module 1 for all the calc operations
 var budgetController = (function(){
 
     var income = Number(0);
@@ -41,6 +43,7 @@ var budgetController = (function(){
 })();
 
 
+// Module 2 for all the UI/UX operations
 var UIController = (function(){
     
     //DRY
@@ -126,7 +129,7 @@ var UIController = (function(){
     
 })();
 
-
+// Module 3 for connection of above mods
 var Controller = (function(bCont, uCont){
     
     // Setting Event Listeners for structuring
